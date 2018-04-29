@@ -1,13 +1,15 @@
 package openWS;
 
-import getMP.GetMP;
+import getMP.GetMetroPlus;
+import org.testng.annotations.Test;
 
 /**
  * Created by mahmudurrahman
  * On 4/28/18.
  */
-public class test01 extends GetMP {
+public class test01 extends GetMetroPlus {
+    @Test
     public void openWS(){
-
+    openMetroPlus();
     }
 }

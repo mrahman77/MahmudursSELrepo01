@@ -2,9 +2,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,13 +14,16 @@ public class commonAPI {
     public WebDriver driver = null;
     @Parameters({"url"})
     @BeforeMethod
-    @Test
-    public void beforeTest(String url){
-        System.setProperty("webdriver.chrome.driver","/Users/mahmudurrahman/IdeaProjects/msf/Generic/driver/chromedriver");
+    public void setUp(String url) {
+        System.setProperty("webdriver.chrome.driver", "../Generic/Driver/chromedriver");
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        //driver.navigate().to("https://www.metroplus.org/");
-        driver.navigate().to(url);
-        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get(url);
     }
-}
+
+    }
+//    @AfterMethod
+//    public void getQuit(){
+//        driver.close();
+//    }
+

@@ -14,13 +14,12 @@
     <test name = "MetroPlus Home">
 
         <classes>
-            <!--<class name="home.search.TestSearch"/>-->
-            <!--<class name="showcreditcards.ShowCreditCards"/>-->
-            <!--<class name="aStart.start"/>-->
-            <!--<class name="aStart.test"/>-->
-            <class name="openWS.test01"/>
-
-
+            <!--<class name="///////"/>-->
+            <!--<class name="///////"/>-->
+            <!--<class name="//////"/>-->
+            <!--<class name="//////"/>-->
+            <!--<class name="openWS.test01"/>-->
+            <class name="openWS.test02"/>
         </classes>
     </test>
 
